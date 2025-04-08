@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebaran Iis</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <a href="#" class="logo">IIS SAFIRA</a>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="about" class="home">
+      <div class="home-img">
+        <img src="images/iis.png" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Iis Safira</span></h1>
+        <h3 class="typing-text">You can call me <span></span></h3>
+        <p>
+          Pasti pada penasaran kan dengan kegiatan Iis selama lebaran Idul Fitri
+          kali ini?
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://api.whatsapp.com/send/?phone=6283891873836&text&type=phone_number&app_absent=0"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://web.facebook.com/iis.safira.735" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@jasjdbbqhs?is_from_webapp=1&sender_device=pc"
+            ><i class="fab fa-tiktok" target="_blank"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_ixy.iis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <a href="#day1" class="btn">LIHAT YUK!</a>
+      </div>
+    </section>
+
+    <!-- Gallery  -->
+    <!-- hari 1  -->
+    <section id="day1" class="activity-gallery1">
+      <h2 class="section-title">Hari Pertama</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/1.jpeg" alt="" />
+          <h3>Sholat Id</h3>
+          <p>
+            Jam 07.00 bersiap-siap berangkat mau sholat Eid bareng keluarga
+            tercinta
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/12.jpeg" alt="" />
+          <h3>Makan Soto</h3>
+          <p>Di jam 09.00 pulang sholat langsung makan soto buatan ibuu dong</p>
+        </div>
+        <div class="card">
+          <img src="images/13.jpeg" alt="" />
+          <h3>Fotbar Keluarga</h3>
+          <p>Selesai makan kami langsung foto-foto bareng keluarga</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- hari 2 -->
+    <section class="activity-gallery2">
+      <h2 class="section-title">Hari Kedua</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/2.jpeg" alt="" />
+          <h3>Ke rumah teman SMA</h3>
+          <p>
+            Waktunya pergi beraya kerumah temen-temen SMA untuk bersilaturahmi
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/22.jpeg" alt="" />
+          <h3>Soto Betawi Time</h3>
+          <p>
+            Nah kami dihidangkan soto betawi oleh mamanya temen saya shania
+            disini juga ada kue minuman dsb.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- hari 345  -->
+    <section class="activity-gallery3">
+      <h2 class="section-title">Hari Ketiga, Keempat, dan Kelima</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/3.jpeg" alt="" />
+          <h3>Hari Ketiga</h3>
+          <p>
+            Waktunya beraya ke rumah temen SMP saya yang sampe sekarang kami
+            masih berteman baik. Sebenarnya kami ber-enam tpi sayangnya 3 lagi
+            ga di kampung.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/sleep.jpg" alt="" />
+          <h3>Bobo Cantik</h3>
+          <p>
+            Waktunya untuk istirahat karna udah cape banget beberapa hari ini ga
+            ada waktu untuk di rumah
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/5.jpeg" alt="" />
+          <h3>Nonton Pacu Kuda</h3>
+          <p>
+            Kerna ada pacuan kuda pariman saya bareng keluarga pergi untuk
+            menonton seruuu bngttt tpi sayang acaranya cuma 2 hari
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toggle Navigation Script -->
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const nav = document.querySelector("nav");
+
+      menuIcon.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("active");
+        });
+      });
+    </script>
+
+    <!-- kontak  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span></span> Yang mau curhat silahkan</h1>
+
+      <form action="https://formsubmit.co/EMAIL_KAMU" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Nama Kamu"
+          class="box"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Kamu"
+          class="box"
+          required
+        />
+        <textarea
+          name="message"
+          class="box"
+          placeholder="Pesan Kamu"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+      <p>&copy; 2025 Iis Safira. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
